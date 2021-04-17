@@ -1,0 +1,58 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md">
+
+            <h2 class="display-5 text-white">Our Home Rink</h2>
+            <p>Wheaton FSC proudly skates at the <a target="_blank" rel="noopener noreferrer"
+                    style="color:cornflowerblue"
+                    href="https://www.montgomeryparks.org/parks-and-trails/wheaton-regional-park-ice-arena/">Wheaton Ice
+                    Arena</a>, located in Wheaton, MD, about 10 minutes north of the Washington D.C. Beltway.</p>
+
+            <h4>Address</h4>
+
+            <p>11717 Orebaugh Avenue</p>
+            <p>Wheaton, MD 20902</p>
+
+            <h4>Contact</h4>
+
+            <p>Phone: 301-905-3000</p>
+            <p>Fax: 301-649-2424</p>
+            <p></p>
+            <a class="btn btn-primary" role="button" target="_blank" rel="noopener noreferrer"
+                href="https://www.montgomeryparks.org/parks-and-trails/wheaton-regional-park-ice-arena/schedules-fees/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <path
+                        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                    <path
+                        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+                Ice Schedule
+            </a>
+        </div>
+
+        <div class="col-md">
+            <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+                <div id="googlemaps-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                        style="height:100%;width:100%;border:0;" frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=Wheaton+Ice+Arena&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div><a class="embed-maphtml" rel="nofollow" href="https://dedicatedhosting.pro"
+                    id="enablemap-data">click</a>
+                <style>
+                    #googlemaps-display .text-marker {}
+
+                    .map-generator {
+                        max-width: 100%;
+                        max-height: 100%;
+                        background: none;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

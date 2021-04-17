@@ -1,0 +1,66 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #fa2840;
+    --orange: #fba91e;
+    --yellow: #ffc107;
+    --green: #35bd49;
+    --teal: #20c997;
+    --cyan: #4ac1ee;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #2284fe;
+    --secondary: #78baf8;
+    --success: #35bd49;
+    --info: #5a7ec5;
+    --warning: #f0a249;
+    --danger: #fc2344;
+    --light: #e5e5e5;
+    --dark: #3b3b3b;
+    --accent-1: #35bd49;
+    --accent-2: #353844;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Lato", Arial, sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    
+/* .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+  
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: slategray;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    margin: 0 auto;
+    /* Added */
+    float: none;
+    /* Added */
+    margin-bottom: 10px;
+    /* Added */
+} 
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #aa1e22;
+    margin: 1em 0;
+    padding: 0; 
+}

@@ -1,0 +1,87 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron p-3 p-md-5 rounded"
+    style="background-size: cover;background-repeat: no-repeat;background-color: #111111">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row justify-content-center">
+                <img src="static/Wheaton-ISI-Club.png" class="img-fluid" style="padding:1em" />
+            </div>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="row justify-content-center">
+                <img src="static/usfs-logo-small.png" class="img-fluid" style="padding:1em" />
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h1 class="display-5 text-white">Wheaton Figure Skating Club</h1>
+            <hr style="background-color:firebrick" />
+            <p class="lead my-3 text-white">
+                The Wheaton Figure Skating Club (Wheaton FSC) is a non-profit organization committed to providing the
+                resources
+                and support necessary to figure skaters of all levels to achieve their goals. We are committed to
+                providing
+                an all inclusive and welcoming environment and encourage the instruction, practice, enjoyment and
+                advancement
+                of our members in all aspects of the sport of figure skating in accordance with United States Figure
+                Skating.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class='row'>
+
+        <div class="col-md-8">
+            <h2 class="display-5 text-black">United States Figure Skating Safe Sport Program</h2>
+            <p>
+                U.S. Figure Skating strives to provide a safe environment for its members that is free of misconduct and
+                harassment.
+                The association will not tolerate or condone any form of harassment or misconduct of any of its members
+                including
+                athletes, coaches, officials, directors, employees, parents, volunteers or any other persons while they
+                are
+                participating in or preparing for a figure skating activity or event conducted under the auspices of
+                U.S.
+                Figure Skating. All forms of misconduct are unacceptable and in direct conflict with U.S. Figure Skating
+                rules.
+                The U.S. Figure Skating SafeSport Program addresses the following types of misconduct:
+            </p>
+            <ul>
+
+                <li>Sexual misconduct </li>
+                <li>Physical misconduct</li>
+                <li>Emotional misconduct</li>
+                <li>Bullying, threats and harassment</li>
+                <li>Hazing</li>
+                <li>Willfully tolerating misconduct</li>
+            </ul>
+            <img src="static/SafeSport-spoke-graphic400x.jpeg" style="margin-left:auto;margin-right:auto;display:block"
+                class="img-fluid" />
+            <p>
+                All individuals, regardless of membership with U.S. Figure Skating, are encouraged to report suspected
+                violations of SafeSport.
+            </p>
+            <p>
+                To make a report, email safesport@usfigureskating.org or call 719-635-5200. More information, including
+                the U.S. Figure Skating
+                SafeSport Handbook may be found at <a style="color:cornflowerblue" target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://www.usfsa.org/clubs?id=84197">http://www.usfsa.org/clubs?id=84197</a>.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-black">
+                Board of Directors and Officers</h2>
+            {% for officer in officers %}
+            <p class="lead my-3" style="padding:0px">{{ officer.name }}
+                <br>
+                <a class="text-muted" style="padding:0px">{{ officer.position }}</a>
+            </p>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}
